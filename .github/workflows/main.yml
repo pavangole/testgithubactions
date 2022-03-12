@@ -33,7 +33,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Fetch the Code 
-        run: git clone git@github.com:pavangole/testgithubactions.git /home/ubuntu
+        run: git clone git@github.com:pavangole/testgithubactions.git /home/ubuntu/testgithubactions
         
       - name: Cd to testgithubactions
         run: cd testgithubactions
