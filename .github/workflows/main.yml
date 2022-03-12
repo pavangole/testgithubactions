@@ -40,7 +40,7 @@ jobs:
         run:  cd /opt/lampp/htdocs
         
       - name: Cd to testgithubactions
-        run: sudo chmod -R testgithubactions/
+        run: sudo chmod -R 777 testgithubactions/
         
       - name: Cd to testgithubactions
         run:  cd /opt/lampp/htdocs/testgithubactions
