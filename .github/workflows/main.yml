@@ -36,6 +36,6 @@ jobs:
         run: git clone https://github.com/pavangole/testgithubactions.git /home/ubuntu/testgithubactions
         
       - name: Cd to testgithubactions
-        run: cd testgithubactions
+        run: cd /home/ubuntu/testgithubactions
       - name: Install all dependencies
         run: composer install 
