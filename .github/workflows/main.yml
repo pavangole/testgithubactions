@@ -34,16 +34,16 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Fetch the Code 
-        run: git clone https://github.com/pavangole/testgithubactions.git /opt/lampp/htdocs/testgithubactions
+        run: sudo git clone https://github.com/pavangole/testgithubactions.git /opt/lampp/htdocs/testgithubactions
         
       - name: Cd to testgithubactions
-        run: cd /opt/lampp/htdocs
+        run: sudo cd /opt/lampp/htdocs
         
       - name: Cd to testgithubactions
-        run: chmod -R testgithubactions/
+        run: sudo chmod -R testgithubactions/
         
       - name: Cd to testgithubactions
-        run: cd /opt/lampp/htdocs/testgithubactions
+        run: sudo cd /opt/lampp/htdocs/testgithubactions
         
       - name: Install all dependencies
-        run: composer install 
+        run: sudo composer install 
