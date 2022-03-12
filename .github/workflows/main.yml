@@ -20,6 +20,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+        
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
@@ -33,9 +34,16 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Fetch the Code 
-        run: git clone https://github.com/pavangole/testgithubactions.git /home/ubuntu/testgithubactions
+        run: git clone https://github.com/pavangole/testgithubactions.git /opt/lampp/htdocs/testgithubactions
         
       - name: Cd to testgithubactions
-        run: cd /home/ubuntu/testgithubactions
+        run: cd /opt/lampp/htdocs
+        
+      - name: Cd to testgithubactions
+        run: chmod -R testgithubactions/
+        
+      - name: Cd to testgithubactions
+        run: cd /opt/lampp/htdocs/testgithubactions
+        
       - name: Install all dependencies
         run: composer install 
