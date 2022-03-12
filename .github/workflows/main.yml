@@ -37,13 +37,13 @@ jobs:
         run: sudo git clone https://github.com/pavangole/testgithubactions.git /opt/lampp/htdocs/testgithubactions
         
       - name: Cd to testgithubactions
-        run: sudo cd /opt/lampp/htdocs
+        run:  cd /opt/lampp/htdocs
         
       - name: Cd to testgithubactions
         run: sudo chmod -R testgithubactions/
         
       - name: Cd to testgithubactions
-        run: sudo cd /opt/lampp/htdocs/testgithubactions
+        run:  cd /opt/lampp/htdocs/testgithubactions
         
       - name: Install all dependencies
         run: sudo composer install 
