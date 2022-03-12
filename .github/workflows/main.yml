@@ -32,3 +32,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Fetch the Code 
+        run: git clone git@github.com:pavangole/testgithubactions.git /home/ubuntu
+        
+      - name: Cd to testgithubactions
+        run: cd testgithubactions
+      - name: Install all dependencies
+        run: composer install 
