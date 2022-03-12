@@ -26,7 +26,7 @@ jobs:
 
       # Runs a single command using the runners shellh
       - name: make all files accessible
-        run: sudo chmod -R 777 /home/actions-runner
+        run: sudo chmod -R 777 /home/ubuntu/actions-runner
         
       - name: Remove the present directory as git will give error
         run: sudo rm -rf /opt/lampp/htdocs/testgithubactions/
